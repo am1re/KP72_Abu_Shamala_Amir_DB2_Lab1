@@ -24,6 +24,7 @@
         <table border="1">
             <thead>
                 <tr>
+                    <td>Title</td>
                     <td>Description</td>
                     <td>Price</td>
                 </tr>
@@ -36,6 +37,9 @@
     <xsl:template match="/shop/product">
         <tr>
             <td>
+                <xsl:apply-templates select="title"/>
+            </td>
+            <td>
                 <xsl:apply-templates select="description"/>
             </td>
             <td>
@@ -44,6 +48,9 @@
         </tr>
     </xsl:template>
     <xsl:template match="price">
+        <xsl:value-of select="text()"/>
+    </xsl:template>
+    <xsl:template match="title">
         <xsl:value-of select="text()"/>
     </xsl:template>
     <xsl:template match="description">

@@ -28,10 +28,13 @@ class ScrapersPipeline(object):
             self.root.append(page)
         else:
             product = etree.Element("product")
+            title = etree.Element("title")
+            title.text = item["title"]
             desc = etree.Element("description")
             desc.text = item["description"]
             pr = etree.Element("price")
             pr.text = item["price"]
+            product.append(title)
             product.append(desc)
             product.append(pr)
             self.root.append(product)

@@ -14,5 +14,4 @@
 ___
 ![lab](screenshots/Task2.png)
 ___
-*Примітка: rozetka.com.ua використовує lazy-loading для зображень, тому Scrapy не може отримати лінку на зображення :(*
 ![lab](screenshots/Task3.png)
