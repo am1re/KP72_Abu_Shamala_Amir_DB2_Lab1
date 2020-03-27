@@ -14,4 +14,4 @@
 ___
 ![lab](screenshots/Task2.png)
 ___
-![lab](screenshots/Task3.png)
+![lab](screenshots/Task3_upd.png)
